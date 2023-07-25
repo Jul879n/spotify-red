@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="assets/img/spotify-miniatura.png" type="image/png">
+    <meta
+     name="viewport"
+     content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+  />
+    <title>Spotify</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+    <script src="https://kit.fontawesome.com/8dcbdfedb3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/8.3.0/gridstack.min.css">
+    <script src="assets/js/jquery.codex.js"></script>
+    <script src="assets/js/mi-js.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gridstack.js/8.3.0/gridstack-all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+</head>
+
+<body>
+    <header id="masthead" class="site-header">
+        <div class="offcanvas offcanvas-end tema menu-offcanvas rounded-2" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel" aria-modal="true" role="dialog">
+            <div class="offcanvas-header">
+                <a href="index.html" class="custom-logo-link" rel="home" aria-current="page"><img class="w-75" src="assets/img/spotify.png" alt="spotify"></a> <button type="button"
+                    class="btn bg-tema d-flex justify-content-center align-items-center" data-bs-dismiss="offcanvas"
+                    aria-label="Close"><i class="text-tema fs-4 fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="offcanvas-body text-tema">
+                <div class="d-flex flex-column h-100 justify-content-between">
+                    <div>
+                        <div class="menu-nav-container">
+                            <ul id="menu-nav" class="navbar-nav m-0">
+                                <li id="menu-item-124" class="nav-item"><a href="https://sitio/spotify-redesign/"
+                                        aria-current="page" class="nav-link text-tema"><i
+                                            class="fa-solid fa-house tex-tema me-2"></i>Inicio</a></li>
+                                <li id="menu-item-163" class="nav-item"><a href="#" class="nav-link text-tema"><i
+                                            class="fa-solid fa-magnifying-glass text-tema me-2"></i>Buscar</a></li>
+                                <li id="menu-item-128" class="nav-item"><a href="#" class="nav-link text-tema"><i
+                                            class="fa-solid fa-book text-tema me-2"></i>Tu biblioteca</a></li>
+                                <li id="menu-item-129" class="nav-item"><a href="#" class="nav-link text-tema"><i
+                                            class="fa-solid fa-square-xmark text-tema me-2"></i>Crear Playlist</a></li>
+                                <li id="menu-item-130" class="nav-item"><a href="#" class="nav-link text-tema"><i
+                                            class="fa-solid fa-heart text-tema me-2"></i>Tus me gusta</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="menu-nav-central-container">
+                            <ul id="menu-nav-central" class="navbar-nav m-0">
+                                <li id="menu-item-131" class="nav-item"><a href="#"
+                                        class="nav-link bg-tema btn w-50">Iniciar Sesión</a></li>
+                                <li id="menu-item-132" class="nav-item"><a href="#"
+                                        class="nav-link text-tema">Registrarte</a></li>
+                                <li id="menu-item-133" class="nav-item"><a href="#"
+                                        class="nav-link text-tema">Descargar</a></li>
+                                <li id="menu-item-134" class="nav-item"><a href="#"
+                                        class="nav-link text-tema">Asistencia</a></li>
+                                <li id="menu-item-135" class="nav-item"><a href="#"
+                                        class="nav-link text-tema">Premium</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="w-100">
+                        <div>
+                            <div class="menu-nav-final-container">
+                                <ul id="menu-nav-final" class="navbar-nav m-0 flex-row row">
+                                    <li id="menu-item-136" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Legal</a></li>
+                                    <li id="menu-item-137" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Centro de privacidad</a></li>
+                                    <li id="menu-item-138" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Política de privacidad</a></li>
+                                    <li id="menu-item-139" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Cookies</a></li>
+                                    <li id="menu-item-140" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Sobre los anuncios</a></li>
+                                    <li id="menu-item-141" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Accesibilidad</a></li>
+                                    <li id="menu-item-142" class="nav-item col-6"><a href="#"
+                                            class="nav-link text-tema text-pequeno">Cookies</a></li>
+                                </ul>
+                            </div>
+                        </div> 
+                        <button class="btn bg-tema w-100"><span class="text-tema"><i
+                                    class="fa-solid fa-globe me-2"></i> Español de Latinoamérica</span></button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="selector-tema">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center p-3">
+                <h1>Selecciona un Tema</h1>
+                <div class="w-100 d-flex justify-content-around">
+                    <div id="tema-blanco" class="cajas-temas seleccion">
+                    </div>
+                    <div id="tema-oscuro" class="cajas-temas seleccion">
+                    </div>
+                    <div id="tema-amoled" class="cajas-temas seleccion">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button id="confirmar" class="disabled btn btn-primary">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="fondo" class="container-fluid ">
+        <div class="row grid-stack">
+            <div id="card-menu" class="grid-stack-item col-12 col-sm-4 gs-4" gs-w="3" gs-no-resize="true">
+                <div id="menu" class="grid-stack-item-content card border-0 tema he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div class="card-body pt-0 pb-0 d-flex justify-content-between align-items-center placeholder">
+                        <span class="spotify text-tema transparente"><i class="fa-brands fa-spotify"></i></span>
+                        <div class="d-flex transparente">
+                            <button id="volver"
+                                class="ms-2 me-2 btn bg-tema circulo  d-flex justify-content-center align-items-center"><i
+                                    class=" text-tema fa-solid fa-angle-left"></i></button>
+                            <button id="adelante"
+                                class="ms-2 me-2 btn bg-tema circulo  d-flex justify-content-center align-items-center"><i
+                                    class="text-tema fa-solid fa-angle-right"></i></button>
+                            <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"
+                                class="ms-2 me-2 btn bg-tema circulo  d-flex justify-content-center align-items-center"><i
+                                    class="text-tema fa-solid fa-bars"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="registrate" class="grid-stack-item placeholder-glow col-12 col-sm-8" gs-w="9" gs-no-resize="true">
+                <div class="grid-stack-item-content card tema border-0">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div class="card-body placeholder d-flex align-items-center justify-content-between he-100">
+                        <div class="d-flex flex-column w-75">
+                            <span
+                                class="fw-bold transparente text-tema nombre-artista efecto-texto text-uppercase">Muestra
+                                de spotify</span>
+                            <span class="transparente text-tema nombre-artista efecto-texto">Registrate para disfrutar
+                                de canciones y podcasts sin limites, con anuncios ocasionales. No hace falta tarjeta de
+                                crédito.</span>
+                        </div>
+                        <span><button class="registrarte btn bg-tema transparente efecto-texto">Registrate
+                                gratis</button></span>
+
+                    </div>
+                </div>
+            </div>
+            <div id="izquierda" class="grid-stack-item placeholder-glow col-12 col-sm-4" gs-w="4" gs-h="5"
+                gs-no-resize="true">
+                <div id="reproductor" class="grid-stack-item-content card border-0 tema bg-secondary text-tema he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div id="info-reproduccion"
+                        class="card-body d-flex flex-column align-items-center justify-content-center placeholder">
+
+                        <img class="mitad rounded-3 placeholder transparente" src="assets/img/cd.jpg" alt="cd" />
+                        <audio style="display: none;" id="cancion" src="" controls>
+                        </audio>
+                        <form class="mt-3 mitad transparente" action="">
+                            <div class="d-flex flex-column">
+                                <a href="" class="fw-bold fs-4 text-tema-titulo efecto-texto"
+                                    id="titulo-cancion">Canción</a>
+                                <a href="" class="text-tema efecto-texto" id="artista-cancion">Artista</a>
+                            </div>
+                            <input class="w-100 border-0" type="range" name="tiempo-reproduccion"
+                                id="tiempo-reproduccion" max="100">
+                            <div class="d-flex justify-content-between">
+                                <span class="text-tema efecto-texto" id="tiempo-actual">00:00</span>
+                                <span class="text-tema efecto-texto" id="duracion">00:00</span>
+                            </div>
+                            <div class="d-flex justify-content-around" id="botones-izquierda">
+                                <button id="mix"
+                                    class="btn-reproductor btn d-flex justify-content-center align-items-center"><i
+                                        class="text-tema fa-solid fa-shuffle"></i></button>
+                                <button id="atras"
+                                    class="btn-reproductor btn d-flex justify-content-center align-items-center text-tema"><i
+                                        class="fa-solid fa-backward-step"></i></button>
+                                <button id="play"
+                                    class="btn-reproductor btn d-flex justify-content-center align-items-center text-tema fs-1"><i
+                                        class="fa-solid fa-circle-play"></i></button>
+                                <button id="siguiente"
+                                    class="btn-reproductor btn d-flex justify-content-center align-items-center text-tema"><i
+                                        class="fa-solid fa-forward-step"></i></button>
+                                <button id="repetir"
+                                    class="btn-reproductor btn d-flex justify-content-center align-items-center "><i
+                                        class="text-tema fa-solid fa-repeat"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="principal" class="grid-stack-item placeholder-glow col-12 col-sm-8" gs-w="8" gs-h="5"
+                gs-no-resize="true">
+                <div id="contenido" class="grid-stack-item-content card border-0 tema bg-secondary text-tema he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div
+                        class="card-body placeholder container-fluid position-relative d-flex flex-column justify-content-around">
+                        <!--enfoque-->
+                        <div class="seccion-enfoque container transparente">
+                            <h2 class="text-tema-titulo efecto-texto">Enfoque</h2>
+                            <div id="carrusel-playlist">
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="deep-focus.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/deep-focus.jpeg" alt="deep focus">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="intrumental-study.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/intrumental-study.jpeg"
+                                            alt="instrumental study">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="quiet-moment.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/quiet-moment.jpeg"
+                                            alt="quiet moment">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="reading-adventure.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/reading-adventure.jpeg"
+                                            alt="reading adventure">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="peaceful-piano.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/peaceful-piano.jpeg
+                                        " alt="peaceful piano">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="focus-flow.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/focus-flow.jpeg" alt="focus flow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--enfoque-->
+                        <!--seleccion-->
+                        <div class="seccion-enfoque container transparente">
+                            <h2 class="text-tema-titulo efecto-texto">Playlist de Spotify</h2>
+                            <div id="carrusel-spotify">
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="focus-flow.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/focus-flow.jpeg" alt="focus flow">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="intrumental-study.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/intrumental-study.jpeg"
+                                            alt="instrumental study">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="quiet-moment.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/quiet-moment.jpeg"
+                                            alt="quiet moment">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="reading-adventure.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/reading-adventure.jpeg"
+                                            alt="reading adventure">
+                                    </a>
+                                </div>
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="deep-focus.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/deep-focus.jpeg" alt="deep focus">
+                                    </a>
+                                </div>
+                                
+                                <div class="col-6 col-sm-2 p-1 transparente">
+                                    <a href="peaceful-piano.html" class="loop">
+                                        <img class="w-100 rounded-2" src="assets/img/peaceful-piano.jpeg
+                                        " alt="peaceful piano">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <!--seleccion-->
+                    </div>
+                </div>
+            </div>
+            <div id="artista" class="grid-stack-item placeholder-glow col-12 col-sm-6" gs-w="6" gs-h="4"
+                gs-no-resize="true">
+                <div class="grid-stack-item-content card border-0 tema bg-secondary he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div class="card-body placeholder d-flex align-items-center justify-content-center">
+                        <h2 class="trasparente no-hay text-tema"><i class="fa-solid fa-compact-disc"></i></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="info-cancion" class="grid-stack-item placeholder-glow col-12 col-sm-6" gs-w="6" gs-h="4"
+                gs-no-resize="true">
+                <div class="grid-stack-item-content card border-0 tema bg-secondary he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <div class="card-body placeholder d-flex align-items-center justify-content-center">
+                        <h2 class="transparente no-hay text-tema"><i class="fa-solid fa-compact-disc"></i></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="footer" class="grid-stack-item placeholder-glow col-12" gs-w="12" gs-h="3" gs-no-resize="true">
+                <div class="grid-stack-item-content card border-0 tema bg-secondary he-100">
+                    <span class="mover transparente"><i class="text-tema fa-solid fa-ellipsis"></i></span>
+                    <footer id="colophon" class="card-body transparente">
+                        <div class="row grid-stack">
+                            <div class="col-12 col-sm-3 mb-2">
+                                <h3 class="text-tema">Compañia</h3>
+                                <div class="menu-footer-1-container">
+                                    <ul id="menu-footer-1" class="navbar-nav m-0">
+                                        <li id="menu-item-143" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Acerca de</a></li>
+                                        <li id="menu-item-144" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Empleo</a></li>
+                                        <li id="menu-item-145" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">For the Record</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 mb-2">
+                                <h3 class="text-tema">Comunidades</h3>
+                                <div class="menu-footer-2-container">
+                                    <ul id="menu-footer-2" class="navbar-nav m-0">
+                                        <li id="menu-item-146" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Para artistas</a></li>
+                                        <li id="menu-item-147" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Desarrolladores</a></li>
+                                        <li id="menu-item-148" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Publicidad</a></li>
+                                        <li id="menu-item-149" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Inversionistas</a></li>
+                                        <li id="menu-item-150" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Proveedores</a></li>
+                                        <li id="menu-item-151" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Spotify for Work</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3 mb-2">
+                                <h3 class="text-tema">Enlaces útiles</h3>
+                                <div class="menu-footer-3-container">
+                                    <ul id="menu-footer-3" class="navbar-nav m-0">
+                                        <li id="menu-item-152" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0">Ayuda</a></li>
+                                        <li id="menu-item-153" class="nav-item"><a href="#"
+                                                class="nav-link text-tema p-0" style="">App móvil gratis</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                <div class="d-flex justify-content-around">
+                                    <a class="bg-tema rounded-circle boton d-flex justify-content-center align-items-center"
+                                        href="#" style=""><i class="text-tema fa-brands fa-instagram fs-4"></i></a>
+                                    <a class="bg-tema rounded-circle boton d-flex justify-content-center align-items-center"
+                                        href="#"><i class="text-tema fa-brands fa-twitter fs-4"></i></a>
+                                    <a class="bg-tema rounded-circle boton d-flex justify-content-center align-items-center"
+                                        href="#"><i class="text-tema fa-brands fa-facebook-f fs-4"></i></a>
+                                </div>
+                            </div>
+                            <div class="col-12 efecto-texto text-tema">
+                                © 2023 Spotify AB
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
